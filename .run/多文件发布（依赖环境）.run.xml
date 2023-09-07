@@ -1,0 +1,9 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="多文件发布（依赖环境）" type="DotNetFolderPublish" factoryName="Publish to folder" editBeforeRun="true">
+    <riderPublish configuration="Release" delete_existing_files="true" platform="Any CPU" runtime="Portable" target_folder="$PROJECT_DIR$/WebApi/target" target_framework="net7.0" uuid_high="5690942993524147100" uuid_low="-6063544395410042764" />
+    <method v="2">
+      <option name="Build Solution" enabled="true" />
+      <option name="Build" default="false" projectName="WebApi" projectPath="file://$PROJECT_DIR$/WebApi/WebApi.csproj" />
+    </method>
+  </configuration>
+</component>

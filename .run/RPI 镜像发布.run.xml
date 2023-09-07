@@ -1,0 +1,24 @@
+﻿<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RPI 镜像发布" type="docker-deploy" factoryName="dockerfile" editBeforeRun="true">
+    <deployment type="dockerfile">
+      <settings>
+        <option name="imageTag" value="reformat/webapi" />
+        <option name="containerName" value="oa-action" />
+        <option name="contextFolderPath" value="WebApi/dist" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="8080" />
+              <option name="hostPort" value="5202" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="commandLineOptions" value="-d" />
+        <option name="showCommandPreview" value="true" />
+        <option name="sourceFilePath" value="WebApi/Dockerfile" />
+      </settings>
+    </deployment>
+    <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="false" isSslEnabled="false" />
+    <method v="2" />
+  </configuration>
+</component>

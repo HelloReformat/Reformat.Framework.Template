@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\Debug\WebApi.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>bin\Release\WebApi.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Reformat.Framework.Core\Reformat.Framework.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="dist\**" />
+      <Compile Remove="target\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="dist\**" />
+      <EmbeddedResource Remove="target\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="dist\**" />
+      <Content Remove="target\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="dist\**" />
+      <None Remove="target\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Enums\" />
+    </ItemGroup>
+
+</Project>
