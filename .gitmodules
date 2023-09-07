@@ -1,0 +1,12 @@
+[submodule "Reformat.Framework.Core"]
+	path = Reformat.Framework.Core
+	url = https://github.com/HelloReformat/Reformat.Framework.Core.git
+[submodule "Reformat.Framework.SqlSugar"]
+	path = Reformat.Framework.SqlSugar
+	url = https://github.com/HelloReformat/Reformat.Framework.SqlSugar.git
+[submodule "Reformat.Framework.EFCore"]
+	path = Reformat.Framework.EFCore
+	url = https://github.com/HelloReformat/Reformat.Framework.EFCore.git
+[submodule "Reformat.Framework.Temp"]
+	path = Reformat.Framework.Temp
+	url = https://github.com/HelloReformat/Reformat.Framework.Temp.git
